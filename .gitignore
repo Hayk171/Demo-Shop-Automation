@@ -1,0 +1,29 @@
+## Build output
+bin/
+obj/
+artifacts/
+[Dd]ebug/
+[Rr]elease/
+
+## Test results and Playwright output
+*.trx
+TestResults/
+playwright-report/
+test-results/
+traces/
+*.zip
+
+## IDE
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+
+## Local configuration overrides — never commit an environment's real URLs or credentials
+appsettings.local.json
+.env.local
+
+## OS
+.DS_Store
+Thumbs.db

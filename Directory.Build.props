@@ -1,0 +1,22 @@
+<Project>
+
+  <!--
+    Standalone repository. Nothing here is inherited from the shop-demo solution, and nothing
+    here is shared with it: this project knows the system under test only by its base URLs.
+    That is what lets the same suite run against localhost, a CI stack, or a deployed
+    environment without a code change.
+  -->
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <IsPackable>false</IsPackable>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+  </PropertyGroup>
+
+</Project>

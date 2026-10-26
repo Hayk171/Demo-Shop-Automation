@@ -1,0 +1,27 @@
+<Project>
+
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.Playwright" Version="1.62.0" />
+
+    <PackageVersion Include="NUnit" Version="4.6.1" />
+    <PackageVersion Include="NUnit3TestAdapter" Version="6.3.0" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.10.0" />
+
+    <!-- Deliberately NOT FluentAssertions: v8+ is commercially licensed. -->
+    <PackageVersion Include="Shouldly" Version="4.3.0" />
+
+    <PackageVersion Include="Microsoft.Extensions.Configuration" Version="10.0.11" />
+    <PackageVersion Include="Microsoft.Extensions.Configuration.Json" Version="10.0.11" />
+    <PackageVersion Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="10.0.11" />
+    <PackageVersion Include="Microsoft.Extensions.Configuration.Binder" Version="10.0.11" />
+
+    <!-- Add when UI tests arrive; it supplies PageTest/ContextTest.
+    <PackageVersion Include="Microsoft.Playwright.NUnit" Version="1.62.0" />
+    -->
+  </ItemGroup>
+
+</Project>
